@@ -28,6 +28,7 @@
     },
     "plugins": ["expo-router", "expo-font"],
     "assetBundlePatterns": ["**/*"],
+    "pakage": "com.ansul.aora",
     "experiments": {
       "typedRoutes": true
     }

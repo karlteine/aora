@@ -5,6 +5,7 @@ import { View, Text, ScrollView, Dimensions, Alert, Image } from 'react-native';
 
 import { images } from '../../constants';
 import { CustomButton, FormField } from '../../components';
+import { createUser } from '../../lib/appwrite';
 
 const SignUp = () => {
   const [isSubmitting, setSubmitting] = useState(false);
@@ -12,11 +13,15 @@ const SignUp = () => {
 
   const submit = async () => {
     if (form.username === '' || form.email === '' || form.password === '') {
-      Alert.alert('Error', 'Please fill in all fields');
+      return Alert.alert('Error', 'Please fill in all fields');
+
     }
 
     setSubmitting(true);
     try {
+      const user = await createUser(form);
+
+      router.replace('/home');
     } catch (error) {
       Alert.alert('Error', error.message);
     } finally {

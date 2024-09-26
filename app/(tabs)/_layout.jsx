@@ -49,14 +49,6 @@ const TabLayout = () => {
             tabBarIcon: ({ color, focused }) => <TabIcon icon={icons.plus} color={color} name="Create" focused={focused} />,
           }}
         />
-        <Tabs.Screen
-          name="bookmark"
-          options={{
-            title: 'Saved',
-            headerShown: false,
-            tabBarIcon: ({ color, focused }) => <TabIcon icon={icons.bookmark} color={color} name="Saved" focused={focused} />,
-          }}
-        />
       </Tabs>
       <StatusBar backgroundColor="#161622" style="light" />
     </>

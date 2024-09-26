@@ -7,7 +7,7 @@ import { StatusBar } from 'expo-status-bar';
 const TabIcon = ({ icon, color, name, focused }) => {
   return (
     <View className="items-center justify-center">
-      <Image source={icon} resizeMode="contain" tintColor={color} className="w-6 h-6" />
+      <Image source={icon} resizeMode="contain" tintColor={color} className="w-6 h-6 mb-0.5" />
       <Text className={`${focused ? 'font-psemibold' : 'font-pregular'} text-xs`} style={{ color }}>
         {name}
       </Text>

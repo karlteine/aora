@@ -1,12 +1,12 @@
-import { Link, router } from 'expo-router';
-import { useState } from 'react';
-import { Alert, Dimensions, Image, ScrollView, Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import { useState } from "react";
+import { Link, router } from "expo-router";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { View, Text, ScrollView, Dimensions, Alert, Image } from "react-native";
 
-import { CustomButton, FormField } from '../../components';
-import { images } from '../../constants';
-import { useGlobalContext } from '../../context/GlobalProvider';
-import { getCurrentUser, signIn } from '../../lib/appwrite';
+import { images } from "../../constants";
+import { CustomButton, FormField } from "../../components";
+import { getCurrentUser, signIn } from "../../lib/appwrite";
+import { useGlobalContext } from "../../context/GlobalProvider";
 
 const SignIn = () => {
   const { setUser, setIsLoggedIn } = useGlobalContext();

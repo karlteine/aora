@@ -6,7 +6,7 @@ import { EmptyState, SearchInput, Trending, VideoCard } from '../../components';
 import { images } from '../../constants';
 import { useGlobalContext } from '../../context/GlobalProvider';
 import { getAllPosts, getLatestPosts } from '../../lib/appwrite';
-import useAppwrite from '../../lib/useAppwrite';
+import useAppwrite from '../../lib/useAppWrite';
 
 const Home = () => {
   const { data: posts, refetch } = useAppwrite(getAllPosts);

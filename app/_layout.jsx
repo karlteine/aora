@@ -1,6 +1,7 @@
 import { useFonts } from 'expo-font';
 import { SplashScreen, Stack } from 'expo-router';
 import { useEffect } from 'react';
+import "react-native-url-polyfill/auto";
 import GlobalProvider from '../context/GlobalProvider';
 
 SplashScreen.preventAutoHideAsync();
@@ -27,10 +28,6 @@ const RootLayout = () => {
   }, [fontsLoaded, error]);
 
   if (!fontsLoaded) {
-    return null;
-  }
-
-  if (!fontsLoaded && !error) {
     return null;
   }
 

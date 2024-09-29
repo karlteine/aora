@@ -4,11 +4,11 @@ import { router } from 'expo-router';
 import { useState } from 'react';
 import { Alert, Image, ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import CustomButton from '../../components/CustomButton';
-import FormField from '../../components/FormField';
-import { icons } from '../../constants';
-import { useGlobalContext } from '../../context/GlobalProvider';
-import { createVideoPost } from '../../lib/appwrite';
+import CustomButton from '@components/CustomButton';
+import FormField from '@components/FormField';
+import { icons } from '@constants';
+import { useGlobalContext } from '@context/GlobalProvider';
+import { createVideoPost } from '@lib/appwrite';
 
 const Create = () => {
   const { user } = useGlobalContext();

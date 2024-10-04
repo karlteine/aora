@@ -16,6 +16,7 @@
       "supportsTablet": true,
       "package": "com.ansul.aora"
     },
+    "permissions": ["CAMERA", "MEDIA_LIBRARY", "NETWORK"],
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
